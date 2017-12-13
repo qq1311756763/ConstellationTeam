@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>home</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/mod/home.css" />
+		<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+		<script src="../js/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+	</head>
+	<style>
+		$(window).resize(function (){
+			var height_size = window.innerWidth;
+			document.getElementsByTagName("article").style.height=(height_size/2)-5;
+		}
+	</style>
+	<body class="mCustomScrollbar" data-mcs-theme="white">
+		<article id="news" style="min-height: 300px;" class="col-lg-4"></article>
+		<article id="ships" style="min-height: 300px;" class="col-lg-4"></article>
+		<article id="message" style="min-height: 300px;" class="col-lg-4"></article>
+		<article id="analysis" style="min-height: 300px;" class="col-lg-12"></article>
+	</body>
+</html>

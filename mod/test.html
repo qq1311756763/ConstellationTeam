@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+/*			window.onload=function(){
+				alert("test");
+			}*/
+			function get(){
+				var a = window.frames["test"].document.scrollTop;
+			}
+		</script>
+		<iframe name="test" src="http://baidu.com" style="width: 500px;height: 200px;"></iframe>
+		<div onclick="get();" style="width: 10px;height: 10px;background-color: #000000;"></div>
+	</body>
+</html>
